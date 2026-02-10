@@ -1,0 +1,16 @@
+.order-send {
+  padding: 20px;
+}
+
+.order-send-item {
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+
+.pending-status {
+  color: orange;
+  font-weight: bold;
+}

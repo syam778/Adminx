@@ -1,0 +1,427 @@
+.sidebar {
+    width: 22%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1f4037, #99f2c8);
+    border-right: 3px solid rgba(255,255,255,0.3);
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+}
+
+/* Options Wrapper */
+.sidebar-op {
+    padding-top: 40px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Each Option */
+.side-op {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.25);
+    color: #063970;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+/* Icon Fix */
+.side-op img {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 6px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect */
+.side-op:hover {
+    transform: translateX(6px);
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Active Item */
+.sidebar-op .active {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(118,75,162,0.8);
+    transform: translateX(8px);
+}
+.icon-wrap {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 320px) {
+    .sidebar {
+        width: 22%;
+        min-height: 80vh;
+        font-size: 14px;
+        background: linear-gradient(180deg, #232526, #414345);
+    }
+
+    .sidebar-op {
+        padding-top: 30px;
+        padding-left: 10px;
+        gap: 15px;
+    }
+
+    .side-op {
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+
+    
+    .side-op img {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        padding: 5px;
+        object-fit: contain;
+    }
+
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 42px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #e74c3c; /* offline red */
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 34px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2ecc71; /* online green */
+}
+
+input:checked + .slider::before {
+  transform: translateX(66px);
+}
+
+.label-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+/* Sidebar.css */
+
+/* General message */
+.msg {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ❌ Error message */
+.msg.error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+}
+
+/* ✅ Success message */
+.msg.success {
+  background-color: #e6ffed;
+  color: #008000;
+  border: 1px solid #008000;
+}
+
+/* Table no-data row */
+.no-data {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 0.8rem 0;
+}
+
+/* Optional: highlight empty table cell */
+.delivery-table td[colspan="7"] {
+  background-color: #f9f9f9;
+}
+/* Section title */
+h3 {
+  margin: 25px 0 15px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* Table */
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Table header */
+.delivery-table thead {
+  background: #ff5722;
+  color: #fff;
+}
+
+.delivery-table th,
+.delivery-table td {
+  padding: 12px 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Table body rows */
+.delivery-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.25s;
+}
+
+.delivery-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Status text */
+.delivery-table td:nth-child(6) {
+  font-weight: 600;
+}
+
+/* No data */
+.delivery-table td[colspan] {
+  padding: 20px;
+  color: #777;
+}
+
+/* Action cell */
+.delivery-table td:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove button */
+.delivery-table button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e53935;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.delivery-table button:hover {
+  background: #c62828;
+}
+
+/* 🔁 Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 28px;
+ 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+/* Label text inside switch */
+.label-text {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+/* Toggle knob */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Checked state */
+.switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(36px);
+  background-color: #401dbe;
+}
+
+.switch input:checked + .slider .label-text {
+  margin-left: 0;
+  margin-right: auto;
+  
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .delivery-table th,
+  .delivery-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .delivery-table td:last-child {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (max-width: 400px) {
+
+  /* Table wrapper */
+  .delivery-table {
+    width: 100%;
+    display: block;
+    border: none;
+  }
+
+  /* Hide table header */
+  .delivery-table thead {
+    display: none;
+  }
+
+  /* Table body */
+  .delivery-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  /* Each row becomes a card */
+  .delivery-table tr {
+    display: block;
+    background: #ffffff;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Cells stacked vertically */
+  .delivery-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+
+  /* Label text (left side) */
+  .delivery-table td::before {
+    font-weight: 700;
+    color: #555;
+    font-size: 12px;
+  }
+
+  /* Labels for each column */
+  .delivery-table td:nth-child(1)::before { content: "Name"; }
+  .delivery-table td:nth-child(2)::before { content: "Number"; }
+  .delivery-table td:nth-child(3)::before { content: "Gmail"; }
+  .delivery-table td:nth-child(4)::before { content: "Special ID"; }
+  .delivery-table td:nth-child(5)::before { content: "Vehicle"; }
+  .delivery-table td:nth-child(6)::before { content: "Status"; }
+  .delivery-table td:nth-child(7)::before { content: "Action"; }
+
+  /* Action column */
+  .delivery-table td:last-child {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  /* Switch full width */
+  .switch {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Remove button */
+  .delivery-table button {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+}

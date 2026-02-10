@@ -1,0 +1,42 @@
+.user-page {
+  padding: 20px;
+}
+
+.user-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+.user-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+}
+
+.delete-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.delete-btn:hover {
+  background: darkred;
+}

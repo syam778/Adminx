@@ -1,0 +1,65 @@
+.delivery-page {
+  padding: 20px;
+}
+
+.delivery-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.delivery-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.assigned {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}

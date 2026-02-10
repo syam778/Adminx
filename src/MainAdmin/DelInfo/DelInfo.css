@@ -1,0 +1,50 @@
+.del-page {
+  padding: 20px;
+}
+
+.del-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.del-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 15px;
+}
+
+.del-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.delete-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.call-link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,113 @@
+.admin-delivery {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.admin-delivery h2,
+.admin-delivery h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.delivery-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.delivery-form input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.delivery-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* CREATE BUTTON */
+.delivery-form button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delivery-form button:hover {
+  background: #1e40af;
+}
+
+/* MESSAGE */
+.msg {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+/* TABLE */
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.delivery-table th,
+.delivery-table td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 14px;
+}
+
+.delivery-table th {
+  background: #111827;
+  color: #fff;
+}
+
+.delivery-table tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+/* REMOVE BUTTON */
+.delivery-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delivery-table button:hover {
+  background: #991b1b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .delivery-table {
+    font-size: 12px;
+  }
+
+  .delivery-table th,
+  .delivery-table td {
+    padding: 8px;
+  }
+}

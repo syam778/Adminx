@@ -1,0 +1,70 @@
+.admin-create {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-create h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.admin-form button {
+  padding: 12px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.admin-form button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.admin-card {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.admin-card p {
+  margin: 6px 0;
+}
+
+.remove-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.no-admin {
+  text-align: center;
+  color: gray;
+}

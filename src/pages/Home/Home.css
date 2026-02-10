@@ -1,0 +1,278 @@
+/*.home {
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.home-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #555;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.order-card.collapsed {
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.order-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
+.status.pending { background: orange; }
+.status.assigned { background: blue; }
+.status.pickup { background: purple; }
+.status.out_for_delivery { background: #0b5ed7; }
+.status.delivered { background: green; }
+
+.toggle-btn {
+  font-size: 18px;
+}
+
+.order-body {
+  margin-top: 10px;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item-card {
+  display: flex;
+  background: #f9f9f9;
+  padding: 5px;
+  border-radius: 8px;
+  gap: 5px;
+  align-items: center;
+  width: 200px;
+}
+
+.item-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.order-actions {
+  margin-top: 10px;
+}
+
+.hide-btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+*/
+.home {
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 50px;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.order-card .order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Status colors */
+.order-card.pending .status { background: orange; }
+.order-card.assigned .status { background: blue; }
+.order-card.pickup .status { background: purple; }
+.order-card.out_for_delivery .status { background: #0b5ed7; }
+.order-card.delivered .status { background: rgb(118, 176, 235); }
+
+.order-body {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.item-card {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 5px;
+  border-radius: 8px;
+  gap: 5px;
+  width: 220px;
+}
+
+.item-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.order-actions {
+  margin-top: 10px;
+}
+
+.hide-btn {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.order-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.order-popup button {
+  margin-top: 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #d32f2f;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.terms-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+  padding: 20px;
+}
+
+.terms-card {
+  max-width: 600px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.terms-card h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.terms-list {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  padding-left: 1.5rem;
+}
+
+.terms-list li {
+  margin-bottom: 10px;
+}
