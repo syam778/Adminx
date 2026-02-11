@@ -47,12 +47,10 @@ import Login from './Login/Login'
 
 const App = () => {
   const {showLogin,setShowLogin} =useState(false)
-  //const url = "https://app.netlify.com/sites/backend-speed-del/overview"
- // const url = "http://localhost:4001"
-
+  const url ="https://backend2-1-mqob.onrender.com"
     //const url = "https://backend-18-0jhq.onrender.com"
     //const url = "http://localhost:3000"
-    const url = "https://back-q3wv.onrender.com "
+    
     //const url = "https://back-ylnd.onrender.com"
     //{showLogin ? <Login setShowLogin={setShowLogin} /> : <></>}
  

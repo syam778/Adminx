@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./AdminCreate.css";
+import { useContext } from "react";
+import { AdminContext } from "../../Context/AdminContext";
 
 const AdminCreate = () => {
   const [formData, setFormData] = useState({
@@ -13,8 +15,8 @@ const AdminCreate = () => {
   const [adminData, setAdminData] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const url = "http://localhost:3000"; // change if needed
-
+  //const url = "http://localhost:3000"; // change if needed
+ const{url} =useContext(AdminContext);
   // input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
