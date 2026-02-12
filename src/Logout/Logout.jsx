@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+/*import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
@@ -21,6 +21,30 @@ const Logout = () => {
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
       <h2>Logging out...</h2>
+    </div>
+  );
+};
+
+export default Logout;
+*/
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+const Logout = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // ✅ remove admin login data
+    localStorage.removeItem("adminToken");
+    localStorage.removeItem("adminData");
+
+    // ✅ redirect to login
+    navigate("/login");
+  }, [navigate]);
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "80px", fontSize: "22px" }}>
+      ⏳ Logging out...
     </div>
   );
 };
