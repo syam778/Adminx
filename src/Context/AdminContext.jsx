@@ -59,8 +59,8 @@ export const AdminContext = createContext(null);
 
 const AdminContextProvider = ({ children }) => {
   // ✅ Backend URL
-  //const url = "http://localhost:3000";
-  const url ="https://backend2-3-vwf9.onrender.com"
+  const url = "http://localhost:3000";
+  //const url ="https://backend2-3-vwf9.onrender.com"
 
   // ✅ Delivery boys list
   const [delBoyList, setDelBoyList] = useState([]);

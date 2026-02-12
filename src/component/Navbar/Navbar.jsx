@@ -30,9 +30,12 @@ const Navbar = ({ setShowLogin }) => {
           <Link to="/payment">Payment</Link>
           <Link to="/delivery/create">Delivery Boy Id</Link>
           <Link to="/condition">Condition</Link>
+          {/*{!token ? (
+            <button onClick={() => setShowLogin(true) || navigate("/login")}>Login</button>
+          ) : ( */}
 
           {!admin ? (
-            <button onClick={() => navigate("/create")}>
+            <button onClick={() => navigate("/login")}>
               Admin
             </button>
           ) : (
@@ -51,6 +54,7 @@ const Navbar = ({ setShowLogin }) => {
                 <li onClick={() => navigate("/map")} ><p>Map Data</p></li>
                 <li onClick={() => navigate("/online")} ><p>Online Data</p></li>
                 <li onClick={() => navigate("/storeverifydata")}><p>Store Data Verify</p></li>
+                
                 
               </ul>
             </div>

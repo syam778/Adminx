@@ -24,9 +24,9 @@ const Sidebar = () => {
                 <div className='icon-wrap' ><img src={assets.bocket} alt="" /></div>
                 <p>OrderSend</p>
             </NavLink>
-            <NavLink to='/new-order' onClick={errorAudio.play()}   className="side-op">
+            <NavLink to='/login' onClick={errorAudio.play()}   className="side-op">
                 <div className='icon-wrap' ><img src={assets.bocket} alt="" /></div>
-                <p>N</p>
+                <p>Admin Login</p>
             </NavLink>
             
         </div>

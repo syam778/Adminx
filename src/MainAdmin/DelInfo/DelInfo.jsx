@@ -71,7 +71,7 @@ const DelInfo = () => {
             <div className="del-card" key={boy._id}>
               <h3>Delivery Boy #{index + 1}</h3>
 
-              <p><b>_id:</b> {boy._id}</p>
+              <p><b>Delboy_id:</b> {boy._id}</p>
               <p><b>name:</b> {boy.name}</p>
 
               {/* ✅ Click to Call */}
