@@ -57,7 +57,7 @@ const Payment = () => {
     };
 
     return (
-        <div className="orderpay" style={{ padding: "50px", background: "#eee" }}>
+        <div className="orderpays" style={{  background: "#eee" }}>
             <h3>Payment Page</h3>
 
             <div className="order-list">
@@ -73,6 +73,8 @@ const Payment = () => {
 
                             {(order.items || []).map((item, i) => (
                                 <div className="item-card" key={i}>
+                                    
+
                                     <img
                                         src={`${url}/images/${encodeURIComponent(
                                             item.image || ""
@@ -134,6 +136,7 @@ const Payment = () => {
                             {order.paymentScreenshot ? (
                                 <img
                                     src={`${url}/uploads/payments/${order.paymentScreenshot}`}
+                                     
                                     alt="Payment Screenshot"
                                     style={{
                                         width: "30%",
@@ -146,6 +149,8 @@ const Payment = () => {
                                         e.target.src = "https://via.placeholder.com/300";
                                     }}
                                 />
+                                
+
                             ) : (
                                 <p style={{ color: "red" }}>❌ No Screenshot Uploaded</p>
                             )}

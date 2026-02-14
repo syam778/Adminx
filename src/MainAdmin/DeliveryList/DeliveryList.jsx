@@ -882,7 +882,7 @@ import "./DeliveryList.css";
 //const BASE_URL = "http://localhost:3000/api";
 
 const DeliveryList = () => {
-  const { delBoyList = [], fetchDelBoys, doneAudio, errorAudio, submitAudio,url } = useContext(AdminContext);
+  const { delBoyList = [], fetchDelBoys, doneAudio, errorAudio, submitAudio, url } = useContext(AdminContext);
 
   const [order, setOrder] = useState(null);
   const [loadingId, setLoadingId] = useState(null);
@@ -946,7 +946,10 @@ const DeliveryList = () => {
       const res = await axios.post(`${url}/api/assignorder/assign`, {
         orderId: order._id,
         deliveryBoyId: boy._id,
+        //storeLinkdata: order.storeLinkdata,//add new code
       });
+     
+
 
       if (res.data.success) {
         setOrder(res.data.assignedOrder);

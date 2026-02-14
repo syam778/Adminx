@@ -48,3 +48,26 @@
   text-decoration: underline;
   cursor: pointer;
 }
+@media (max-width: 360px) {
+  .del-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 15px;
+}
+
+.del-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  margin-left: -20px;
+}
+.del-title {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: -20px;
+}
+
+
+}

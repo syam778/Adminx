@@ -9,11 +9,11 @@ const Sidebar = () => {
     <div className='sidebar'>
         <div className="sidebar-op">
             <NavLink to='/add' onClick={errorAudio.play()}  className="side-op">
-                <div className='icon-wrap'><img src={assets.store} alt="" /></div>
+                <div className='icon-wrap'><img src={assets.add} alt="" /></div>
                 <p>Add Items</p>
             </NavLink>
             <NavLink to='/list' onClick={errorAudio.play()}   className="side-op">
-                 <div className='icon-wrap' ><img src={assets.bocket} alt="" /></div>
+                 <div className='icon-wrap' ><img src={assets.data} alt="" /></div>
                 <p>List Items</p>
             </NavLink>
             <NavLink to='/order' onClick={errorAudio.play()}   className="side-op">
@@ -21,11 +21,11 @@ const Sidebar = () => {
                 <p>Order</p>
             </NavLink>
             <NavLink to='/delivery/get' onClick={errorAudio.play()}   className="side-op">
-                <div className='icon-wrap' ><img src={assets.bocket} alt="" /></div>
+                <div className='icon-wrap' ><img src={assets.delivery} alt="" /></div>
                 <p>OrderSend</p>
             </NavLink>
             <NavLink to='/login' onClick={errorAudio.play()}   className="side-op">
-                <div className='icon-wrap' ><img src={assets.bocket} alt="" /></div>
+                <div className='icon-wrap' ><img src={assets.admin} alt="" /></div>
                 <p>Admin Login</p>
             </NavLink>
             

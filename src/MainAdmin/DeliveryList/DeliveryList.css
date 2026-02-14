@@ -1,5 +1,7 @@
 .delivery-list {
-  padding: 20px;
+  padding: 10px;
+  margin-left: -0px;
+  z-index: 10;
 }
 
 .stats {

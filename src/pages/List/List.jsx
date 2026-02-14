@@ -11,8 +11,8 @@ import { AdminContext } from '../../Context/AdminContext'
 const List = () => {
 
   const [list, setList] = useState([]);
-  const {url} = useContext(AdminContext);
-  
+  const { url } = useContext(AdminContext);
+
   let errorAudio = new Audio('/Audios/error.mp3');
   let submitAudio = new Audio('/Audios/done.mp3');
   const fetchList = async () => {
@@ -25,7 +25,7 @@ const List = () => {
     }
     else {
       toast.error("Error")
-      
+
 
     }
   }
@@ -63,8 +63,12 @@ const List = () => {
           {list.map((item, index) => {
             return (
               <div key={index} className='list-table-format'>
-                <img src={`${url}/images/` + item.image} alt="" />
-                 
+                {/*<img src={`${url}/images/` + item.image} alt="" />*/}
+                <img src={`${url}/uploads/` + item.image} alt="" />
+
+
+
+
                 <p>Name : {item.name}</p>
                 <p>Category : {item.category}</p>
                 <p>Price : ₹{item.price}</p>
@@ -74,17 +78,16 @@ const List = () => {
                   <p className='street'>Adress : {item.street}</p>
                   <p className='brand'>S Name : {item.firstName}</p>
                   <p className='phone'>Number : {item.phone}</p>
-                 {item.phone && (
-  <a href={`tel:${item.phone}`} className="call-btnn">
-    📞 Call 
-  </a>
-)}
+                  {item.phone && (
+                    <a href={`tel:${item.phone}`} className="call-btnn">
+                      📞 Call
+                    </a>
+                  )}
 
-                  
 
                 </span>
 
-               <p>
+                <p>
                   {item.linkdata ? (
                     <a
                       href={item.linkdata}

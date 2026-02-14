@@ -1,5 +1,7 @@
 .delivery-page {
-  padding: 20px;
+  padding: 10px;
+  margin-left: -0px;
+  z-index: 10;
 }
 
 .delivery-title {
@@ -62,4 +64,33 @@
 
 .delete-btn:hover {
   background: darkred;
+}
+@media (max-width: 360px) {
+  .delivery-page {
+  padding: 10px;
+  margin-left: -10px;
+  width: min-content;
+  height: min-content;
+  z-index: 100;
+}
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  width: min-content;
+  height: min-content;
+  z-index: 100;
+}
+
+.delivery-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  width: min-content;
+  height: min-content;
+  z-index: 100;
+}
+
+
 }

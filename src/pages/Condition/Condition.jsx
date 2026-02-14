@@ -3,7 +3,7 @@ import "./Condition.css";
 
 const Condition = () => {
   return (
-    <div className="terms-container">
+    <div className="terms-containers">
       <div className="terms-card">
         <h2>Terms & Conditions</h2>
 

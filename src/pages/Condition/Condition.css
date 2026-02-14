@@ -1,10 +1,11 @@
-.terms-container {
+.terms-containers {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: skyblue;
   padding: 20px;
+  z-index: 10;
 }
 
 .terms-card {

@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 15px;
+  z-index: 10;
 }
 
 .user-card {
@@ -24,6 +25,10 @@
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+  width: min-content;
+  height: min-content;
+  margin-left: -20px;
 }
 
 .delete-btn {
@@ -39,4 +44,33 @@
 }
 .delete-btn:hover {
   background: darkred;
+}
+@media (max-width: 360px) {
+  .user-page {
+  padding: 20px;
+  margin-left: -20px;
+  z-index: 10px;
+  width: min-content;
+  height: min-content;
+  
+
+}
+.user-card {
+  background: rgb(228, 158, 158);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+  margin-left: -0px;
+  z-index: 10px;
+  width: min-content;
+  height: min-content;
+  
+  
+}
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  z-index: 1000;
+}
 }
