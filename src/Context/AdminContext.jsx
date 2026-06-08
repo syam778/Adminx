@@ -59,7 +59,7 @@ export const AdminContext = createContext(null);
 
 const AdminContextProvider = ({ children }) => {
   // ✅ Backend URL
-  const url = "http://localhost:3000";
+  const url = "https://syama-mniy.onrender.com";
   
   //const url = "https://backend2-5-2t0w.onrender.com" //last
 
