@@ -75,7 +75,7 @@ const Payment = () => {
                                 <div className="item-card" key={i}>
                                     
 
-                                    <img
+                                    {/*<img
                                         src={`${url}/images/${encodeURIComponent(
                                             item.image || ""
                                         )}`}
@@ -83,7 +83,7 @@ const Payment = () => {
                                         onError={(e) => {
                                             e.target.src = "https://via.placeholder.com/80";
                                         }}
-                                    />
+                                    />*/}<img src={item.image} alt={item.name} />
 
                                     <div className="item-info">
                                         <p className="item-name">{item.name}</p>

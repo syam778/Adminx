@@ -469,7 +469,30 @@ const Add = () => {
   return (
     <div className="add">
       <form className="form1" onSubmit={onSubmitHandler}>
-        {/* Upload Image */}
+        <div className="add-img-up">
+  <p>Upload Image</p>
+
+  <label htmlFor="image">
+    <img
+      src={
+        image
+          ? URL.createObjectURL(image)
+          : assets.download
+      }
+      alt=""
+      
+    />
+  </label>
+
+  <input
+    type="file"
+    id="image"
+    hidden
+    accept="image/*"
+    onChange={(e) => setImage(e.target.files[0])}
+  />
+</div>
+        {/* Upload Image 
         <div className="add-img-up">
           <p>Upload Image</p>
           <label htmlFor="image">
@@ -485,7 +508,7 @@ const Add = () => {
             required
             onChange={(e) => setImage(e.target.files[0])}
           />
-        </div>
+        </div>*/}
 
         {/* Product Name */}
         <input
